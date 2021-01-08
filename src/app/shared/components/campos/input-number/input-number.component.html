@@ -7,11 +7,11 @@
     </mat-error>
     <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'min')">Campo
       pode ter
-      no mínimo o valor 0
+      no mínimo o valor {{validacao.lengthValidar(formControl, 'min')}}
     </mat-error>
     <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'max')">Campo
       pode ter
-      no máximo o valor 10
+      no máximo o valor {{validacao.lengthValidar(formControl, 'max')}}
     </mat-error>
   </mat-form-field>
 </div>
