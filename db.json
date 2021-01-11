@@ -119,6 +119,16 @@
       "urlIMDb": "https://www.imdb.com/title/tt0133093/?ref_=tt_mv_close",
       "genero": "Ficção Cientifica",
       "id": 12
+    },
+    {
+      "titulo": "Máquina Mortífera",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BZTllNWNlZjctMWQwMS00ZDc3LTg5ZjMtNzhmNzhjMmVhYTFlXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_UY268_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "1987-05-28T03:00:00.000Z",
+      "descricao": "Two newly paired cops who are complete opposites must put aside their differences in order to catch a gang of drug smugglers.",
+      "nota": 7.6,
+      "urlIMDb": "https://www.imdb.com/title/tt0093409/?ref_=ttls_li_tt",
+      "genero": "Ação",
+      "id": 13
     }
   ]
 }
