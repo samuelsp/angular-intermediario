@@ -22,7 +22,7 @@ export class ListagemFilmesComponent implements OnInit {
   filtrosListagem: FormGroup;
   generos: Array<string>;
 
-  constructor(private filmesService: FilmesService,
+  constructor(
               private fb: FormBuilder,
               private router: Router) { }
 
@@ -46,26 +46,26 @@ export class ListagemFilmesComponent implements OnInit {
 
     this.generos = ['Ação', 'Romance', 'Aventura', 'Terror', 'Ficção cientifica', 'Comédia', 'Aventura', 'Drama'];
 
-    this.listarFilmes();
+    // this.listarFilmes();
   }
 
   onScroll(): void {
-    this.listarFilmes();
+    // this.listarFilmes();
   }
 
   abrir(id: number): void {
     this.router.navigateByUrl('/filmes/' + id);
   }
 
-  private listarFilmes(): void {
-    this.config.pagina++;
-    this.filmesService.listar(this.config)
-      .subscribe((filmes: Filme[]) => this.filmes.push(...filmes));
-  }
+  // private listarFilmes(): void {
+  //   this.config.pagina++;
+  //   // this.filmesService.listar(this.config)
+  //     // .subscribe((filmes: Filme[]) => this.filmes.push(...filmes));
+  // }
 
   private resetarConsulta(): void {
     this.config.pagina = 0;
     this.filmes = [];
-    this.listarFilmes();
+    // this.listarFilmes();
   }
 }
