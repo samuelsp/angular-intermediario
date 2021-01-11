@@ -11,17 +11,16 @@ import { Inject } from '@angular/core';
 export class AlertaComponent implements OnInit {
   alerta = {
     titulo: 'Sucesso!',
-    descricao: 'Seu registro foi cadastro com sucesso!',
+    descricao: 'Seu registro foi cadastrado com sucesso!',
     btnSucesso: 'OK',
     btnCancelar: 'Cancelar',
     possuirBtnFechar: false,
-    corBtnSucesso: 'accent',
-    corBtnCancelar: 'warn'
+    corBtnCancelar: 'accent'
   } as Alerta;
 
   constructor(
-      public dialog: MatDialog, 
-      @Inject(MAT_DIALOG_DATA) public data) {}
+        public dialog: MatDialog, 
+        @Inject(MAT_DIALOG_DATA) public data) {}
 
   openDialog() {
     this.dialog.open(AlertaComponent);
